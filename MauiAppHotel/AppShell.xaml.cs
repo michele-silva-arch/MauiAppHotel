@@ -7,7 +7,6 @@ namespace MauiAppHotel
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(Sobre), typeof(Sobre));
         }
     }
 }

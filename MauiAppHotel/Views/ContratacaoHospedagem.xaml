@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Secondary }">
     
-    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+    <VerticalStackLayout VerticalOptions="Center"  
                           Padding="10">
         <Label Text="Cálculo da Diária!"
             FontFamily="CaveatVariableFontwght"
@@ -57,26 +57,23 @@
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
                         <HorizontalStackLayout>
-                            <Label Text="Check-in" />
-                            <DatePicker x:Name="dtpck_Checkin"
-                             Format="dd/MM/yyyy"  />
+                        <Label Text="Check-in" />
+                        <DatePicker x:Name="dtpck_Checkin"
+                                    Format="dd/MM/yyyy"  />
 
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out" />
                             <DatePicker x:Name="dtpck_Checkout"
-                                         Format="dd/MM/yyyy"  />
+                                        Format="dd/MM/yyyy"  />
 
                         </HorizontalStackLayout>
                         
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar."
-                        Margin="10"/>
-
-                <Button Text="Sobre"/>
+                <Button Text="Avançar." Clicked="Button_Clicked"/>
 
             </VerticalStackLayout>
         </Frame>
