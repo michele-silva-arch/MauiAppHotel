@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
                 NavigationPage.HasNavigationBar="False"
-                BackgroundColor="{StaticResource SecondaryDarkText}">
+                BackgroundColor="{StaticResource  Gray950}">
     
     <VerticalStackLayout>
        <Label Text="Sobre o AppHotel - Net.Maui"
               FontFamily="CaveatVariableFontwght"
-              FontSize="50"
+              FontSize="40"
               TextColor="{StaticResource  White}"
               HorizontalTextAlignment="Center"/>
 
@@ -26,8 +26,32 @@
             </HorizontalStackLayout>
         </Frame>
 
-        <Button Text="Voltar."  
-        HorizontalOptions="Center"
-        Clicked="Button_Clicked"/>
+        <Label Text="Como surgimos?"
+                FontFamily="CaveatVariableFontwght"
+                FontSize="30"
+                TextColor="{StaticResource  White}"
+                HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <VerticalStackLayout>
+                <Label Text= "O Moonlight Hotel, nasceu do sonho simples de receber bem.O que começou como uma pequena hospedaria de família, hoje é um lugar cheio de histórias, aconchego e charme — feito pra quem busca descanso de verdade." 
+                FontSize="13"
+                TextColor="{StaticResource Secondary}"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label Text="Obrigado, pela preferêcia"
+         FontFamily="CaveatVariableFontwght"
+         FontSize="10"
+         TextColor="{StaticResource  White}"
+         HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <Button Text="Voltar."  
+                    Clicked="Button_Clicked"
+                   BackgroundColor="LightGoldenrodYellow"/>
+            
+        </Frame>
+      
     </VerticalStackLayout>
 </ContentPage>
